@@ -54,6 +54,7 @@ const schema= yup.object().shape({
            <div>{errors.password}</div>
            <div>{errors.tos}</div>  
       </div>  
+      <hr/>
           <form className='form-container'
           onSubmit={submit}> 
           <label>Name
@@ -65,7 +66,7 @@ const schema= yup.object().shape({
               placeholder='Enter Name'
               maxLength='35'/>
           </label>
-  
+        <br/>
           <label>Email
               <input 
               onChange={change}
@@ -75,7 +76,7 @@ const schema= yup.object().shape({
               placeholder='Email Address'
               maxLength='40'/>
           </label>
-  
+        <br/>
           <label>Password
               <input 
               onChange={change}
@@ -84,7 +85,7 @@ const schema= yup.object().shape({
               type='text'
               placeholder='Create Password'/>
           </label>
-  
+        <br/>
           <label>Terms of Service
               <input 
               onChange={change}
@@ -93,7 +94,7 @@ const schema= yup.object().shape({
               type='checkbox'
               placeholder='Your are required to read and agree to the following terms of service'/>
           </label>
-  
+ <hr/> 
           
               <button disabled={disabled}>Submit</button>
           <div className='newUser'>
